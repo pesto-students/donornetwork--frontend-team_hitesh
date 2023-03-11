@@ -4,7 +4,15 @@
 }
 .logo img {
   width: 180px;
+  height: 65px;
   cursor: pointer;
+}
+.banner img {
+  height: 250px;
+  width: 1256px;
+  background-color: f5f5f5;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  margin-bottom: 25px;
 }
 .header {
   display: flex;
@@ -15,10 +23,11 @@
 }
 .nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: end;
   align-items: center;
-  width: 50%;
+  width: 100%;
   background-color: white;
+  font-family: monospace;
 }
 .loginbtn {
   background-color: #da2f47;
@@ -33,6 +42,47 @@
   cursor: pointer;
   border: 1px solid #da2f47;
 }
+.content {
+  font-weight: bold;
+}
+.slogan1 {
+  padding: 30px 0 0 0;
+}
+.slogan2 {
+  color: #da2f47;
+  padding: 0 0 20px 0;
+}
+.regsdonor {
+  background-color: #da2f47;
+  color: white;
+  border: #da2f47;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.regsdonor a {
+  background-color: #da2f47;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+}
+.regesrequester {
+  background-color: #000000;
+  color: white;
+  border: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.regesrequester a {
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+}
+
 .aboutnav {
   background-color: white;
   color: black;
@@ -57,7 +107,7 @@
   border-radius: 5px;
   cursor: pointer;
 }
-body {
+main {
   margin: 1px 0px 0px 0px;
 }
 .content {
@@ -70,48 +120,110 @@ body {
 }
 .info {
   font-size: 80%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  padding: 0 0 30px 0;
+}
+.aboutus {
+  background-color: #f5f5f5;
   padding: 20px;
 }
-.aboutus > h1 {
+.aboutcontent {
+  background-color: #f5f5f5;
+}
+.aboutus .blk {
   margin: auto;
   width: fit-content;
-  padding: 20px;
+  background-color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: #000000;
 }
+.aboutus .red {
+  margin: auto;
+  width: fit-content;
+  background-color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: #da2f47;
+}
+
 .aboutcontent {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  padding: 0 0 15px 0;
 }
 .abouttext {
-  width: 50%;
+  width: 32%;
+  border-left: 5px solid #da2f47;
+  padding: 15px 10px;
+  background-color: f5f5f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+.aboutimg {
+  background-color: #f5f5f5;
+}
+.aboutimg img {
+  height: 300px;
+  width: 280px;
+  background-color: f5f5f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
 }
 .block {
   display: flex;
   justify-content: space-evenly;
 }
 .blockitem {
-  border: 1px solid gray;
+  padding: 15px 10px;
+  background-color: f5f5f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+.tips {
+  padding: 2px 0 20px 0;
+}
+.tips p {
+  text-align: center;
+  padding: 0px 0px 15px 0px;
 }
 
-.blog > h1,
-p {
+.blockitem h3 {
+  text-align: center;
+}
+.blogtitle {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+.blog > h1 {
   margin: auto;
   width: fit-content;
   padding: 20px;
+  background-color: #f5f5f5;
+}
+.blog > p {
+  background-color: #f5f5f5;
 }
 .blogblock {
   display: flex;
   justify-content: space-evenly;
+  background-color: #f5f5f5;
 }
-.tips > h1,
-p {
+.tips > h1 {
   margin: auto;
   width: fit-content;
-  padding: 20px;
+  padding: 15px 10px;
+  background-color: #f5f5f5;
 }
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.footerlogo img {
+  width: 180px;
+  height: 65px;
+  cursor: pointer;
 }
