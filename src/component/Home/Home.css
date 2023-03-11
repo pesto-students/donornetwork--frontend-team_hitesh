@@ -1,0 +1,117 @@
+* {
+  background-color: white;
+  margin: 1px;
+}
+.logo img {
+  width: 180px;
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+}
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  background-color: white;
+}
+.loginbtn {
+  background-color: #da2f47;
+  color: white;
+  border: #da2f47;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.loginbtn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border: 1px solid #da2f47;
+}
+.aboutnav {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.blog {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.homenav {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body {
+  margin: 1px 0px 0px 0px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.btnregist {
+  padding: 20px 10px;
+}
+.info {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+.aboutus > h1 {
+  margin: auto;
+  width: fit-content;
+  padding: 20px;
+}
+.aboutcontent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.abouttext {
+  width: 50%;
+}
+.block {
+  display: flex;
+  justify-content: space-evenly;
+}
+.blockitem {
+  border: 1px solid gray;
+}
+
+.blog > h1,
+p {
+  margin: auto;
+  width: fit-content;
+  padding: 20px;
+}
+.blogblock {
+  display: flex;
+  justify-content: space-evenly;
+}
+.tips > h1,
+p {
+  margin: auto;
+  width: fit-content;
+  padding: 20px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
