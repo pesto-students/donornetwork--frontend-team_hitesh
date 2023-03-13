@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../images/logo.png";
 import banner from "../../images/Banner.png";
 import aboutimg from "../../images/Aboutimg.jpg";
+import chartimg from "../../images/chartimg.webp";
 import "./Home.css";
 import { tipsArray, blogArray } from "../../constant";
 
@@ -102,21 +103,80 @@ const Home = () => {
             </div>
           </div>
           <hr />
-          <div className="blogtitle">
-            <h1>Blog</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusamus, iusto. Aspernatur eius autem inventore adipisci nam
-              porro, atque maxime dolor quod, ullam eos. Tenetur, maiores
-              veritatis ad nostrum voluptatibus facilis!
-            </p>
-            <div className="blogblock">
-              {tipsArray.map((item, index) => (
-                <div className="blockitem">
-                  <h3>{item.heading}</h3>
-                  <p>{item.points}</p>
-                </div>
-              ))}
+
+          <div className="bloodchart">
+            <h1 className="blk">Learn About </h1>
+            <h1 className="red">Donation</h1>
+            <div className="chartcontent">
+              <div className="chartimg">
+                <img src={chartimg} alt="Image" />
+                <p>
+                  *After donating blood, the body works to replenish the blood
+                  loss. This stimulates the <br />
+                  production of new blood cells and in turn, helps in
+                  maintaining good health.
+                  <br /> <br />
+                </p>
+                <p>
+                  * human body contains five liters of blood, which is made of
+                  several useful
+                  <br /> components i.e. Whole blood, Platelet, and Plasma. Each
+                  type of component has <br /> several medical uses and can be
+                  used for different medical treatments. <br />
+                  <br /> *Your blood donation determines the best donation for
+                  you to make. For plasma and platelet <br />
+                  donation you must have donated whole blood in past two years.
+                </p>
+              </div>
+              <div className="chart">
+                <table>
+                  <tr>
+                    <th>Blood Type</th>
+                    <th>Donate Blood To</th>
+                    <th>Receive Blood From</th>
+                  </tr>
+                  <tr>
+                    <td>A+</td>
+                    <td>A+ AB+</td>
+                    <td>A+ A- O+ O-</td>
+                  </tr>
+                  <tr>
+                    <td>O+</td>
+                    <td>O+ A+ B+ AB+</td>
+                    <td>O+ O-</td>
+                  </tr>
+                  <tr>
+                    <td>B+</td>
+                    <td>B+ AB+</td>
+                    <td>B+ B- O+ O-</td>
+                  </tr>
+                  <tr>
+                    <td>AB+</td>
+                    <td>AB+</td>
+                    <td>Everyone</td>
+                  </tr>
+                  <tr>
+                    <td>A-</td>
+                    <td>A+ A- AB+ AB-</td>
+                    <td>A- O-</td>
+                  </tr>
+                  <tr>
+                    <td>O-</td>
+                    <td>Everyone</td>
+                    <td>O-</td>
+                  </tr>
+                  <tr>
+                    <td>B-</td>
+                    <td>B+ B- AB+ AB-</td>
+                    <td>B- O-</td>
+                  </tr>
+                  <tr>
+                    <td>AB-</td>
+                    <td>AB+ AB-</td>
+                    <td>AB- A- B- O-</td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
         </main>
