@@ -4,6 +4,7 @@ import banner from "../../images/Banner.png";
 import aboutimg from "../../images/Aboutimg.jpg";
 import chartimg from "../../images/chartimg.webp";
 import "./Home.css";
+import { Outlet, Link } from "react-router-dom";
 import { tipsArray, blogArray } from "../../constant";
 
 const Home = () => {
@@ -15,10 +16,17 @@ const Home = () => {
             <img src={logo} alt="logo" />
           </div>
           <div className="nav">
-            <span className="homenav">Home</span>
+            <span className="homenav">
+              <Link to="/">Home</Link>
+            </span>
             <span className="aboutnav">About</span>
             <span className="blog">Blog</span>
-            <button className="loginbtn">Login</button>
+            <span className="searchblood">
+              <Link to="/searchbloodbank">Search blood bank</Link>
+            </span>
+            <button className="loginbtn">
+              <Link to="/loginbtn">Login</Link>
+            </button>
           </div>
         </header>
         <main>
