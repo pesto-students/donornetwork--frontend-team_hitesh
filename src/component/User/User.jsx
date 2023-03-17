@@ -41,6 +41,7 @@ const User = () => {
               </div>
             </div>
           </div>
+          <div className="quicklinks"></div>
         </div>
       </div>
     </>
