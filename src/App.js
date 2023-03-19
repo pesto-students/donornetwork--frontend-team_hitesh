@@ -5,12 +5,18 @@ import Searchbank from './component/Searchbank/Searchbank';
 import Login from './component/Login/Login';
 import User from './component/User/User';
 import {PrivateRoute} from './Protectedroute';
+import Donorform from './component/Donorform/Donorform';
+import Requesterform from './component/Requesterform/Requesterform';
+import Blog from './component/Blog/Blog';
 const App = () => {
   return (
     <>
     <Routes>
     <Route path="/" element={<Home />}/>
     <Route path="/searchbloodbank" element={<Searchbank />}/>
+    <Route path="/Blog" element={<Blog />}/>
+    <Route path="/regsdonor" element={<Donorform />}/>
+    <Route path="/regesrequester" element={<Requesterform />}/>
     <Route path="/loginbtn" element={<Login />}/>
     <Route
   path="/user"

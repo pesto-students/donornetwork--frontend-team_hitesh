@@ -20,7 +20,9 @@ const Home = () => {
               <Link to="/">Home</Link>
             </span>
             <span className="aboutnav">About</span>
-            <span className="blog">Blog</span>
+            <span className="blog">
+              <Link to="/blog">Blog</Link>
+            </span>
             <span className="searchblood">
               <Link to="/searchbloodbank">Search blood bank</Link>
             </span>
@@ -43,10 +45,10 @@ const Home = () => {
 
             <div className="btnregist">
               <button className="regsdonor">
-                <a href="xyz">Register as Donor</a>
+                <Link to="/regsdonor">Register as Donor</Link>
               </button>
               <button className="regesrequester">
-                <a href="abc">Request for Blood</a>
+                <Link to="/regesrequester">Request for Blood</Link>
               </button>
             </div>
             <div className="info">
