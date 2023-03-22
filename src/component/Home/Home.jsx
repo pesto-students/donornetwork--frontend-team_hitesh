@@ -19,7 +19,9 @@ const Home = () => {
             <span className="homenav">
               <Link to="/">Home</Link>
             </span>
-            <span className="aboutnav">About</span>
+            <span className="aboutnav">
+              <a href="#aboutus">About</a>
+            </span>
             <span className="blog">
               <Link to="/blog">Blog</Link>
             </span>
@@ -64,7 +66,7 @@ const Home = () => {
             </div>
           </div>
           <hr />
-          <div className="aboutus">
+          <div id="aboutus">
             <h1 className="blk">How we make a </h1>
             <h1 className="red"> difference!</h1>
 

@@ -15,12 +15,18 @@ const Searchbank = () => {
             <span className="homenav">
               <Link to="/">Home</Link>
             </span>
-            <span className="aboutnav">About</span>
-            <span className="blog">Blog</span>
+            <span className="aboutnav">
+              <a href="#aboutus">About</a>
+            </span>
+            <span className="blog">
+              <Link to="/blog">Blog</Link>
+            </span>
             <span className="searchblood">
               <Link to="/searchbloodbank">Search blood bank</Link>
             </span>
-            <button className="loginbtn">Login</button>
+            <button className="loginbtn">
+              <Link to="/loginbtn">Login</Link>
+            </button>
           </div>
         </header>
         <div className="container">

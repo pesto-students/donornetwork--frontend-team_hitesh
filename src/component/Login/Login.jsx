@@ -27,11 +27,18 @@ const Login = () => {
             <span className="homenav">
               <Link to="/">Home</Link>
             </span>
-            <span className="aboutnav">About</span>
-            <span className="blog">Blog</span>
+            <span className="aboutnav">
+              <a href="#aboutus">About</a>
+            </span>
+            <span className="blog">
+              <Link to="/blog">Blog</Link>
+            </span>
             <span className="searchblood">
               <Link to="/searchbloodbank">Search blood bank</Link>
             </span>
+            <button className="loginbtn">
+              <Link to="/loginbtn">Login</Link>
+            </button>
           </div>
         </header>
         <div className="container">
@@ -60,7 +67,9 @@ const Login = () => {
                 <label>Password</label>
               </div>
 
-              <button onClick={handleSubmit}>Login</button>
+              <button className="loginbtn2" onClick={handleSubmit}>
+                Login
+              </button>
             </form>
           </div>
         </div>

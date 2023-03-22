@@ -14,7 +14,9 @@ const Donorform = () => {
           <span className="homenav">
             <Link to="/">Home</Link>
           </span>
-          <span className="aboutnav">About</span>
+          <span className="aboutnav">
+            <a href="#aboutus">About</a>
+          </span>
           <span className="blog">
             <Link to="/blog">Blog</Link>
           </span>

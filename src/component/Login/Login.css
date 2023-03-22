@@ -2,11 +2,24 @@
   background-color: #3333;
   display: flex;
   justify-content: space-between;
+  padding: 1px 1px 55px 1px;
+}
+.loginbtn2 {
+  background-color: #da2f47;
+  color: white;
+  border: 2px solid #da2f47;
+  transition-duration: 0.4s;
+  width: 80px;
+  height: 30px;
+}
+.loginbtn2:hover {
+  background-color: white;
+  color: black;
 }
 .loginimg img {
   height: 400px;
   width: 400px;
-  padding: 50px 0 50px 95px;
+  padding: 60px 0 50px 100px;
 }
 .login-box {
   position: absolute;
