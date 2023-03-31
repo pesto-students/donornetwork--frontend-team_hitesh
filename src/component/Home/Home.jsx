@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../images/logo.png";
 import banner from "../../images/Banner.png";
 import aboutimg from "../../images/Aboutimg.jpg";
 import chartimg from "../../images/chartimg.webp";
@@ -11,28 +10,6 @@ const Home = () => {
   return (
     <>
       <div>
-        <header className="header">
-          <div className="logo">
-            <img src={logo} alt="logo" />
-          </div>
-          <div className="nav">
-            <span className="homenav">
-              <Link to="/">Home</Link>
-            </span>
-            <span className="aboutnav">
-              <a href="#aboutus">About</a>
-            </span>
-            <span className="blog">
-              <Link to="/blog">Blog</Link>
-            </span>
-            <span className="searchblood">
-              <Link to="/searchbloodbank">Search blood bank</Link>
-            </span>
-            <button className="loginbtn">
-              <Link to="/loginbtn">Login</Link>
-            </button>
-          </div>
-        </header>
         <main>
           <div className="banner">
             <img src={banner} alt="banner" />
@@ -193,18 +170,6 @@ const Home = () => {
           </div>
         </main>
         <hr />
-        <footer>
-          <div className="footerlogo">
-            <img src={logo} alt="logo" />
-          </div>
-          <div className="contact">
-            <a href="google.com">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="google.com">I</a>
-            <a href="google.com">T</a>
-          </div>
-        </footer>
       </div>
     </>
   );

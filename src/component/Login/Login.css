@@ -47,7 +47,7 @@
 
 .login-box .user-box input {
   width: 100%;
-  padding: 10px 0;
+  padding: 30px 0 0 0;
   font-size: 16px;
   color: #fff;
   margin-bottom: 30px;
@@ -65,14 +65,6 @@
   color: #fff;
   pointer-events: none;
   transition: 0.5s;
-}
-
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
-  top: -20px;
-  left: 0;
-  color: #fff;
-  font-size: 15px;
 }
 
 .login-box form a {
@@ -109,6 +101,16 @@
   height: 2px;
   background: linear-gradient(90deg, transparent, #da2f47);
   animation: btn-anim1 1s linear infinite;
+}
+#otp {
+  width: auto;
+  height: auto;
+  padding: 0 0 100px 0;
+}
+#number {
+  width: auto;
+  height: auto;
+  padding: 0 0 100px 0;
 }
 
 @keyframes btn-anim1 {

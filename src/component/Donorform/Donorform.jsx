@@ -255,19 +255,6 @@ const Donorform = () => {
           <button className="submitbtn">Submit</button>
         </form>
       </div>
-
-      <footer>
-        <div className="footerlogo">
-          <img src={logo} alt="logo" />
-        </div>
-        <div className="contact">
-          <a href="google.com">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="google.com">I</a>
-          <a href="google.com">T</a>
-        </div>
-      </footer>
     </>
   );
 };

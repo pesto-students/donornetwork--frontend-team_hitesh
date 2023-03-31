@@ -8,9 +8,14 @@ import {PrivateRoute} from './Protectedroute';
 import Donorform from './component/Donorform/Donorform';
 import Requesterform from './component/Requesterform/Requesterform';
 import Blog from './component/Blog/Blog';
+import Header from './component/Header/Header';
+import Footer from './component/Footer/Footer';
+
 const App = () => {
   return (
     <>
+    <Header/>
+    
     <Routes>
     <Route path="/" element={<Home />}/>
     <Route path="/searchbloodbank" element={<Searchbank />}/>
@@ -27,6 +32,7 @@ const App = () => {
   }
 />
     </Routes>
+    <Footer/>
     </>
   )
 }

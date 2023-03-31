@@ -19,28 +19,6 @@ const Login = () => {
   return (
     <>
       <div>
-        <header className="header">
-          <div className="logo">
-            <img src={logo} alt="logo" />
-          </div>
-          <div className="nav">
-            <span className="homenav">
-              <Link to="/">Home</Link>
-            </span>
-            <span className="aboutnav">
-              <a href="#aboutus">About</a>
-            </span>
-            <span className="blog">
-              <Link to="/blog">Blog</Link>
-            </span>
-            <span className="searchblood">
-              <Link to="/searchbloodbank">Search blood bank</Link>
-            </span>
-            <button className="loginbtn">
-              <Link to="/loginbtn">Login</Link>
-            </button>
-          </div>
-        </header>
         <div className="container">
           <div className="loginimg">
             <img src={loginimg} alt="logo" />
@@ -55,7 +33,7 @@ const Login = () => {
                   required=""
                   onChange={(e) => setemail(e.target.value)}
                 />
-                <label>Username</label>
+                <label id="number">Number</label>
               </div>
               <div className="user-box">
                 <input
@@ -64,7 +42,7 @@ const Login = () => {
                   required=""
                   onChange={(e) => setpassword(e.target.value)}
                 />
-                <label>Password</label>
+                <label id="otp">OTP</label>
               </div>
 
               <button className="loginbtn2" onClick={handleSubmit}>
@@ -73,18 +51,6 @@ const Login = () => {
             </form>
           </div>
         </div>
-        <footer>
-          <div className="footerlogo">
-            <img src={logo} alt="logo" />
-          </div>
-          <div className="contact">
-            <a href="google.com">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="google.com">I</a>
-            <a href="google.com">T</a>
-          </div>
-        </footer>
       </div>
     </>
   );

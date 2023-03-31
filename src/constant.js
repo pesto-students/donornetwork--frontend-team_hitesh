@@ -47,7 +47,7 @@ export const blogArray = [
 
 export const dummylogin = {
 
- email: "pestoproject.com",
- password: "1111111",
+ email: "9999999999",
+ password: "111111",
 
 }
