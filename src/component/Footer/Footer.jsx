@@ -4,7 +4,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div>
+    <>
       <footer>
         <div className="footerlogo">
           <img src={logo} alt="logo" />
@@ -17,7 +17,7 @@ const Footer = () => {
           <a href="google.com">T</a>
         </div>
       </footer>
-    </div>
+    </>
   );
 };
 
