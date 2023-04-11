@@ -12,30 +12,7 @@ const Requesterform = () => {
           <h1>Blood Request Form</h1>
           <fieldset>
             <legend>
-              <h3>Account Details</h3>
-            </legend>
-            <div class="account-details">
-              <div>
-                <label>Email*</label>
-                <input type="text" name="name" required />
-              </div>
-              <div>
-                <label>Password*</label>
-                <input type="password" name="name" required />
-              </div>
-              <div>
-                <label>Repeat email*</label>
-                <input type="text" name="name" required />
-              </div>
-              <div>
-                <label>Repeat password*</label>
-                <input type="password" name="name" required />
-              </div>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>
-              <h3>Personal Details</h3>
+              <h3>Details</h3>
             </legend>
             <div class="personal-details">
               <div>

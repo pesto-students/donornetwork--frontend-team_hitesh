@@ -1,7 +1,9 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+}
+
+.user-container {
+  display: flex;
 }
 
 .card {
@@ -11,6 +13,7 @@
   margin: 15px;
   margin: left;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  float: left;
 }
 
 .card_profile_img {
@@ -62,4 +65,73 @@
 .bloodgroup > h2 {
   color: #da2f47;
   padding: 0 0 15px 28px;
+}
+
+.quicklinks {
+  width: 500px;
+  float: left;
+}
+
+.quicklinks ul {
+  margin-left: 1rem;
+}
+.quicklinks ul > li {
+  list-style: none;
+  float: left;
+  /* border: 1px solid #000; */
+  padding: 1em;
+  width: 49%;
+  margin: 1px;
+  margin-bottom: 1rem;
+}
+
+.quicklinks ul > li img {
+  width: 50px;
+  height: 50px;
+  padding: 1px;
+  float: left;
+}
+
+.quicklinks ul > li a span {
+  font-size: 25px;
+  font-weight: bolder;
+}
+.recent-blood-requests {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.recent-blood-requests h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.recent-blood-requests ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.recent-blood-requests li {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.recent-blood-requests li:last-child {
+  border-bottom: none;
+}
+
+.recent-blood-requests p {
+  margin: 0;
+  padding: 0;
+}
+
+.recent-blood-requests p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
 }

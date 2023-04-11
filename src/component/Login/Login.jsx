@@ -1,58 +1,71 @@
 import React, { useState } from "react";
-import logo from "../../images/logo.png";
-import { Outlet, Link } from "react-router-dom";
-import loginimg from "../../images/loginimg.png";
 import "./Login.css";
-import { dummylogin } from "../../constant";
-import { useNavigate } from "react-router-dom";
+import User from "../User/User";
 
 const Login = () => {
-  const [email, setemail] = useState("");
-  const [password, setpassword] = useState("");
-  const navigate = useNavigate();
-  function handleSubmit() {
-    if (email === dummylogin.email && password === dummylogin.password) {
-      localStorage.setItem("token", "true");
-      navigate("/user");
-    }
-  }
-  return (
-    <>
-      <div>
-        <div className="container">
-          <div className="loginimg">
-            <img src={loginimg} alt="logo" />
-          </div>
-          <div class="login-box">
-            <h2>Login</h2>
-            <form>
-              <div className="user-box">
-                <input
-                  type="text"
-                  name=""
-                  required=""
-                  onChange={(e) => setemail(e.target.value)}
-                />
-                <label id="number">Number</label>
-              </div>
-              <div className="user-box">
-                <input
-                  type="password"
-                  name=""
-                  required=""
-                  onChange={(e) => setpassword(e.target.value)}
-                />
-                <label id="otp">OTP</label>
-              </div>
+  const [viewOtpForm, setViewOtpForm] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-              <button className="loginbtn2" onClick={handleSubmit}>
-                Login
-              </button>
-            </form>
-          </div>
+  const handleLoginSubmit = (e) => {
+    e.preventDefault();
+    const phoneNumber = e.target.phone.value;
+    if (phoneNumber === "9999999999") {
+      setViewOtpForm(true);
+    }
+  };
+
+  const handleOtpSubmit = (e) => {
+    e.preventDefault();
+    const otp = e.target.otp_value.value;
+    if (otp === "111111") {
+      setIsAuthenticated(true);
+    }
+  };
+
+  if (isAuthenticated) {
+    return <User />;
+  }
+
+  return (
+    <div className="wrapper">
+      <h1 className="main-heading">Log-in</h1>
+      <p className="sub-text">Sign in using your mobile number.</p>
+      {!viewOtpForm ? (
+        <div className="form-wrapper">
+          <form id="loginForm" onSubmit={handleLoginSubmit}>
+            <div className="input-field">
+              <label>Phone Number</label>
+              <input
+                type="logintext"
+                placeholder="Phone"
+                name="phone"
+                autoComplete="false"
+              />
+            </div>
+            <button className="main-button" type="submit" id="sign-in-button">
+              Login
+            </button>
+          </form>
         </div>
-      </div>
-    </>
+      ) : (
+        <div className="form-wrapper" onSubmit={handleOtpSubmit}>
+          <form id="otpForm">
+            <div className="input-field">
+              <label>Enter OTP</label>
+              <input
+                type="number"
+                placeholder="One time password"
+                name="otp_value"
+                autoComplete="false"
+              />
+            </div>
+            <button className="main-button" type="submit">
+              Verify OTP
+            </button>
+          </form>
+        </div>
+      )}
+    </div>
   );
 };
 

@@ -45,9 +45,4 @@ export const blogArray = [
     },
 ];
 
-export const dummylogin = {
 
- email: "9999999999",
- password: "111111",
-
-}

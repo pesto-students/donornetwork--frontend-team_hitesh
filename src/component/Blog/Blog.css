@@ -1,101 +1,100 @@
-#name {
-  font-family: cursive;
-  padding-left: 40%;
-  padding-top: 10%;
-  padding-bottom: 40%;
-  padding-right: 20%;
-  font-size: xx-large;
+main {
+  width: 80%;
+  margin: 0 auto;
 }
-* {
-  box-sizing: border-box;
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
 }
+
+.blogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .column {
-  float: left;
-  width: 33%;
-  padding: 5px 5px;
+  flex: 33.33%;
+  padding: 0.5rem;
+  text-align: center;
 }
-.blog {
-  margin: 0 -5px;
-}
-.blog:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  height: 100%;
 }
-@media screen and (max-width: 600px) {
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.card p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-align: justify;
+  margin: 0.5rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+
   .column {
+    flex: 50%;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  main {
     width: 100%;
-    display: block;
-    margin-bottom: 20px;
   }
-  img {
-    height: auto;
-    width: auto;
+
+  .column {
+    flex: 100%;
   }
-}
-#about {
-  text-align: center;
-  font-size: x-large;
-}
-.aboutme {
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-#mypic {
-  border-radius: 50%;
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.fa-facebook {
-  background: #3b5998;
-  color: white;
-}
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-.image {
-  position: absolute;
-  top: 5vh;
-  left: 3vw;
-  border-radius: 50%;
-}
-.video {
-  position: absolute;
-  left: 3vw;
-  bottom: 4vw;
-}
-.desc {
-  position: absolute;
-  margin-left: 12cm;
-  margin-top: 2cm;
-  margin-bottom: 2cm;
-  margin-right: 1cm;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  text-align: center;
-  background-color: #f1f1f1;
-}
-.posts {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  background-color: #f1f1f1;
+
+  .card img {
+    height: 200px;
+  }
+
+  .card h3 {
+    font-size: 1.3rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
 }

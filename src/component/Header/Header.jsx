@@ -11,17 +11,17 @@ const Header = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className="nav">
-          <span className="homenav">
+          <span className="navtext">
             <Link to="/">Home</Link>
           </span>
-          <span className="aboutnav">
+          <span className="navtext">
             <a href="#aboutus">About</a>
           </span>
-          <span className="blog">
+          <span className="navtext">
             <Link to="/blog">Blog</Link>
           </span>
-          <span className="searchblood">
-            <Link to="/searchbloodbank">Search blood bank</Link>
+          <span className="navtext">
+            <Link to="/searchbloodbank">Find a Blood Bank</Link>
           </span>
           <button className="loginbtn">
             <Link to="/loginbtn">Login</Link>

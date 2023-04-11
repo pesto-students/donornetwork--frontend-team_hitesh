@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Home from './component/Home/Home'
 import { Routes, Route } from "react-router-dom";
 import Searchbank from './component/Searchbank/Searchbank';
@@ -12,10 +12,10 @@ import Header from './component/Header/Header';
 import Footer from './component/Footer/Footer';
 
 const App = () => {
+
   return (
     <>
     <Header/>
-    
     <Routes>
     <Route path="/" element={<Home />}/>
     <Route path="/searchbloodbank" element={<Searchbank />}/>

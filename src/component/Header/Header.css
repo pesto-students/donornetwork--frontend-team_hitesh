@@ -1,45 +1,58 @@
-.logo img {
-  width: 180px;
-  height: 65px;
-  cursor: pointer;
-}
-.banner img {
-  height: 250px;
-  width: 1256px;
-  background-color: f5f5f5;
-  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-  margin-bottom: 25px;
-}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-.nav a {
-  text-decoration: none;
-  color: #000000;
+
+.logo img {
+  height: 50px;
+  width: auto;
 }
+
 .nav {
   display: flex;
-  justify-content: end;
   align-items: center;
-  width: 100%;
-  background-color: white;
-  font-family: monospace;
 }
+
+.navtext {
+  margin-left: 20px;
+}
+
+.navtext a {
+  color: #333;
+  text-decoration: none;
+}
+
+.navtext a:hover {
+  color: #da2f47;
+}
+
 .loginbtn {
-  background-color: #da2f47;
-  color: white;
-  border: #da2f47;
+  display: inline-block;
+  background: linear-gradient(to right, #da2f47, #c95767);
+  color: #fff;
+  font-size: 16px;
   padding: 10px 20px;
-  border-radius: 5px;
-  margin: 10px 10px 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 20px;
 }
+
+.loginbtn a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .loginbtn:hover {
   background-color: white;
-  color: black;
-  cursor: pointer;
-  border: 1px solid #da2f47;
+  color: #da2f47;
+}
+
+.loginbtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
